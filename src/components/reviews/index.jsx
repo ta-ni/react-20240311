@@ -1,7 +1,7 @@
 import Review from "../review/index.jsx";
 
 const Reviews = ({reviews}) => {
-    if(!reviews.length){
+    if(!reviews?.length){
         return null;
     }
 

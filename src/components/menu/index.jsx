@@ -1,7 +1,7 @@
 import Dish from "../dish/index.jsx";
 
 const Menu = ({menu}) => {
-    if(!menu.length){
+    if(!menu?.length){
         return null;
     }
 
