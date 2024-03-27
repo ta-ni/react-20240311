@@ -1,7 +1,7 @@
-import Header from '../header';
-import Footer from '../footer';
+import { Header } from '../header/component.jsx';
+import { Footer } from '../footer/component.jsx';
 
-const Layout = ({children}) => {
+export const Layout = ({children}) => {
     return (
         <div>
             <Header/>
@@ -12,5 +12,3 @@ const Layout = ({children}) => {
         </div>
     )
 }
-
-export default Layout;
