@@ -1,12 +1,10 @@
 import { restaurants } from '../../constants/mock.js';
-import Restaurant from '../restaurant';
+import { Restaurant } from '../restaurant/component.jsx';
 
-const Restaurants = () => {
+export const Restaurants = () => {
     return (
         <div>
             {!!restaurants.length && restaurants.map(restaurant => <Restaurant restaurant={restaurant}/>)}
         </div>
     )
 }
-
-export default Restaurants;

@@ -1,20 +1,15 @@
-import Review from "../review/index.jsx";
+import { Review } from "../review/component.jsx";
 
-const Reviews = ({reviews}) => {
+export const Reviews = ({reviews}) => {
     if(!reviews?.length){
         return null;
     }
 
-    return (<div>
-        <h3>Отзывы</h3>
-        <ul>
+    return (<ul>
             {reviews.map(review =>
                 <li>
                     <Review text={review.text}/>
                 </li>
             )}
-        </ul>
-    </div>)
+        </ul>)
 }
-
-export default Reviews;
